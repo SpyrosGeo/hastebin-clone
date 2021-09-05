@@ -18,7 +18,9 @@ app.get('/new',(req,res)=>{
     res.render("new")
 })
 
-
+app.post('/save',(req,res)=>{
+    
+})
 app.listen(PORT,()=>{
     console.log(`Listening at port: ${PORT}`)
 })
