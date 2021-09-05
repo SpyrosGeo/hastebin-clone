@@ -13,6 +13,11 @@ to create a new file to share with others`
     res.render('code-display',{code:code,lineNumbers:code.split('\n').length})
 })
 
+//Create New Document
+app.get('/new',(req,res)=>{
+    res.render("new")
+})
+
 
 app.listen(PORT,()=>{
     console.log(`Listening at port: ${PORT}`)
